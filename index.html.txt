@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khóa Học TikTok & Livestream Bùng Nổ Doanh Số - Sonnet Group</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon (Sử dụng logo của bạn) -->
+    <link rel="icon" href="https://assets.website-files.com/6274769363806214A5932598/62747971408032742b322f9_favicon.png" type="image/png">
+
+    <style>
+        /* CSS tùy chỉnh để sử dụng màu sắc thương hiệu */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        :root {
+            --brand-orange: #F97316; /* Màu cam chính */
+            --brand-dark-blue: #1E3A8A; /* Màu xanh đậm */
+            --brand-yellow: #FBBF24; /* Màu vàng */
+            --brand-light-gray: #F3F4F6;
+        }
+        .bg-brand-gradient {
+            background: linear-gradient(90deg, var(--brand-orange), var(--brand-yellow));
+        }
+        .text-brand-dark-blue {
+            color: var(--brand-dark-blue);
+        }
+        .text-brand-orange {
+            color: var(--brand-orange);
+        }
+        .bg-brand-orange {
+            background-color: var(--brand-orange);
+        }
+        .hover\:bg-brand-orange-dark:hover {
+            background-color: #EA580C;
+        }
+        .border-brand-orange {
+            border-color: var(--brand-orange);
+        }
+        .ring-brand-orange {
+            --tw-ring-color: var(--brand-orange);
+        }
+        .section-padding {
+            padding: 4rem 1rem;
+        }
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 6rem 1.5rem;
+            }
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, var(--brand-orange), var(--brand-yellow));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#">
+                <img src="https://www.sonnetgroup.net/images/logo/sonnet-logo-dark.svg" alt="Logo của Sonnet Group" class="h-8 md:h-10">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <nav class="flex items-center space-x-6">
+                    <a href="#courses" class="text-gray-600 hover:text-brand-orange transition-colors">Khóa Học</a>
+                    <a href="#why-us" class="text-gray-600 hover:text-brand-orange transition-colors">Tại Sao Chọn Chúng Tôi</a>
+                    <a href="#faq" class="text-gray-600 hover:text-brand-orange transition-colors">FAQ</a>
+                </nav>
+                <a href="#register" class="bg-brand-orange text-white font-semibold px-5 py-2 rounded-lg shadow-md hover:bg-brand-orange-dark transition-all transform hover:scale-105">
+                    Đăng Ký Ngay
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <nav class="flex flex-col items-center space-y-4 py-4">
+                <a href="#courses" class="text-gray-600 hover:text-brand-orange transition-colors mobile-menu-link">Khóa Học</a>
+                <a href="#why-us" class="text-gray-600 hover:text-brand-orange transition-colors mobile-menu-link">Tại Sao Chọn Chúng Tôi</a>
+                <a href="#faq" class="text-gray-600 hover:text-brand-orange transition-colors mobile-menu-link">FAQ</a>
+                <a href="#register" class="w-full mx-4 text-center bg-brand-orange text-white font-semibold px-5 py-2 rounded-lg shadow-md hover:bg-brand-orange-dark transition-all transform hover:scale-105 mobile-menu-link">
+                    Đăng Ký Ngay
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-brand-light-gray">
+            <div class="container mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-brand-dark-blue leading-tight mb-4">
+                        Bùng Nổ Doanh Số Với
+                        <span class="gradient-text">TikTok & Livestream</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 max-w-xl mx-auto md:mx-0">
+                        Nắm vững bí quyết xây kênh triệu views và chốt ngàn đơn hàng qua các khóa học thực chiến được thiết kế dành riêng cho bạn!
+                    </p>
+                    <a href="#courses" class="bg-brand-orange text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-brand-orange-dark transition-all transform hover:scale-105 inline-block">
+                        Khám Phá Khóa Học
+                    </a>
+                </div>
+                <div class="relative">
+                    <img src="https://www.sonnetgroup.net/_next/image?url=%2Fimages%2Ftiktok%2Fhero-image.png&w=1920&q=75" alt="[Hình ảnh quảng cáo khóa học TikTok]" class="rounded-2xl shadow-2xl w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses" class="section-padding">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark-blue">Hai Khóa Học "Vàng" Dành Cho Bạn</h2>
+                    <p class="text-gray-500 mt-2 max-w-2xl mx-auto">Dù bạn muốn xây dựng thương hiệu hay trở thành "chiến thần" bán hàng, chúng tôi đều có giải pháp.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+                    <!-- Course Card 1: Xây Kênh TikTok -->
+                    <div class="bg-white border border-gray-200 rounded-2xl shadow-xl overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                        <img src="https://www.sonnetgroup.net/_next/image?url=%2Fimages%2Ftiktok%2Fcourse-1.png&w=1080&q=75" alt="[Hình ảnh Khóa học Xây kênh TikTok Triệu Views]" class="w-full h-auto object-cover">
+                        <div class="p-6 md:p-8 flex-grow flex flex-col">
+                            <h3 class="text-2xl font-bold text-brand-dark-blue mb-3">Xây Kênh TikTok Triệu Views</h3>
+                            <p class="text-gray-600 mb-6 flex-grow">Học cách tạo ra nội dung viral, nắm bắt thuật toán và xây dựng một cộng đồng fan trung thành cho thương hiệu của bạn.</p>
+                            <ul class="space-y-3 mb-8 text-gray-700">
+                                <li class="flex items-center">
+                                    <svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    Tư duy sáng tạo nội dung theo trend.
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    Kỹ năng quay, dựng video chuyên nghiệp.
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    Phân tích và tối ưu hiệu quả kênh.
+                                </li>
+                            </ul>
+                            <a href="#register" class="mt-auto w-full bg-brand-dark-blue text-white font-semibold py-3 px-6 rounded-lg text-center hover:bg-blue-800 transition-colors">
+                                Tìm Hiểu Thêm
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Course Card 2: Livestream Bán Hàng -->
+                    <div class="bg-white border border-gray-200 rounded-2xl shadow-xl overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                        <img src="https://www.sonnetgroup.net/_next/image?url=%2Fimages%2Ftiktok%2Fcourse-2.png&w=1080&q=75" alt="[Hình ảnh Khóa học Livestream Bán Hàng Ngàn Đơn]" class="w-full h-auto object-cover">
+                        <div class="p-6 md:p-8 flex-grow flex flex-col">
+                            <h3 class="text-2xl font-bold text-brand-dark-blue mb-3">Livestream Bán Hàng Ngàn Đơn</h3>
+                            <p class="text-gray-600 mb-6 flex-grow">Biến mỗi phiên livestream thành một "lễ hội" chốt đơn với kịch bản hấp dẫn và kỹ năng tương tác đỉnh cao.</p>
+                            <ul class="space-y-3 mb-8 text-gray-700">
+                                <li class="flex items-center">
+                                    <svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    Xây dựng kịch bản livestream thu hút.
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    Nghệ thuật chốt đơn và xử lý từ chối.
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-6 h-6 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    Setup phiên live chuyên nghiệp, ít chi phí.
+                                </li>
+                            </ul>
+                             <a href="#register" class="mt-auto w-full bg-brand-orange text-white font-semibold py-3 px-6 rounded-lg text-center hover:bg-brand-orange-dark transition-colors">
+                                Tìm Hiểu Thêm
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Why Us Section -->
+        <section id="why-us" class="section-padding bg-brand-light-gray">
+            <div class="container mx-auto px-4">
+                 <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark-blue">Tại Sao Nên Chọn Sonnet Group?</h2>
+                    <p class="text-gray-500 mt-2 max-w-2xl mx-auto">Chúng tôi không chỉ dạy lý thuyết, chúng tôi mang đến kết quả thật.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <div class="bg-brand-orange inline-block p-4 rounded-full mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.085a2 2 0 00-1.736.93L5.5 8m7 2v5m0 0v5m0-5h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 003.414 15H1v-5h2.414a1 1 0 00.707-.293l2.414-2.414a1 1 0 01.707-.293h3.172a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293H14z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-dark-blue mb-2">Giảng Viên Thực Chiến</h3>
+                        <p class="text-gray-600">Kinh nghiệm xây dựng thành công nhiều kênh TikTok và các chiến dịch livestream bão đơn.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <div class="bg-brand-orange inline-block p-4 rounded-full mb-4">
+                           <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-dark-blue mb-2">Lộ Trình Tinh Gọn</h3>
+                        <p class="text-gray-600">Chương trình học tập trung vào các kiến thức cốt lõi, dễ áp dụng và tạo ra kết quả ngay lập tức.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <div class="bg-brand-orange inline-block p-4 rounded-full mb-4">
+                           <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V7a2 2 0 012-2h2.586a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293H17z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-dark-blue mb-2">Hỗ Trợ Trọn Đời</h3>
+                        <p class="text-gray-600">Tham gia cộng đồng học viên, được giải đáp thắc mắc và cập nhật kiến thức mới liên tục.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA / Registration Form -->
+        <section id="register" class="section-padding bg-brand-gradient">
+            <div class="container mx-auto px-4">
+                <div class="bg-white rounded-2xl shadow-2xl p-8 md:p-12 max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+                    <div class="text-center md:text-left">
+                        <h2 class="text-3xl font-bold text-brand-dark-blue mb-3">Nhận Tư Vấn Miễn Phí!</h2>
+                        <p class="text-gray-600">Để lại thông tin, đội ngũ chuyên gia của Sonnet Group sẽ liên hệ và giúp bạn chọn khóa học phù hợp nhất.</p>
+                    </div>
+                    <form action="#" method="POST" class="space-y-4">
+                        <div>
+                            <label for="name" class="hidden">Họ và tên</label>
+                            <input type="text" id="name" name="name" placeholder="Họ và tên của bạn" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-orange" required>
+                        </div>
+                        <div>
+                            <label for="phone" class="hidden">Số điện thoại</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Số điện thoại" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-orange" required>
+                        </div>
+                        <div>
+                            <label for="email" class="hidden">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Email (Không bắt buộc)" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-orange">
+                        </div>
+                        <button type="submit" class="w-full bg-brand-orange text-white font-bold text-lg py-3 rounded-lg shadow-md hover:bg-brand-orange-dark transition-colors">
+                            Gửi Thông Tin
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section-padding">
+            <div class="container mx-auto px-4 max-w-3xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark-blue">Câu Hỏi Thường Gặp</h2>
+                </div>
+                <div class="space-y-4" id="faq-container">
+                    <!-- FAQ items will be inserted here by JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-4 py-8 text-center">
+            <img src="https://www.sonnetgroup.net/images/logo/sonnet-logo-light.svg" alt="Logo Sonnet Group màu trắng" class="h-10 mx-auto mb-4">
+            <p class="text-gray-400">&copy; 2024 Sonnet Group. All Rights Reserved.</p>
+            <p class="text-gray-500 text-sm mt-2">Website được thiết kế để giới thiệu khóa học.</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- Mobile Menu Toggle ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu when a link is clicked
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // --- FAQ Accordion Logic ---
+        const faqData = [
+            {
+                question: "Tôi là người mới hoàn toàn, có tham gia được không?",
+                answer: "Chắc chắn rồi! Cả hai khóa học đều được thiết kế với lộ trình từ cơ bản đến nâng cao, phù hợp cho cả những người chưa có kinh nghiệm."
+            },
+            {
+                question: "Hình thức học là online hay offline?",
+                answer: "Hiện tại chúng tôi cung cấp cả hai hình thức học. Vui lòng để lại thông tin để được tư vấn về lịch học và địa điểm gần nhất."
+            },
+            {
+                question: "Tôi có được hỗ trợ sau khi kết thúc khóa học không?",
+                answer: "Có. Bạn sẽ được tham gia vào nhóm cộng đồng học viên của Sonnet Group để được hỗ trợ, giải đáp thắc mắc và cập nhật các kiến thức, thuật toán mới nhất trọn đời."
+            },
+            {
+                question: "Tôi cần chuẩn bị những gì trước khi tham gia khóa học?",
+                answer: "Bạn chỉ cần một chiếc smartphone có thể quay video và cài đặt ứng dụng TikTok. Quan trọng nhất là một tinh thần sẵn sàng học hỏi và thực hành!"
+            }
+        ];
+
+        const faqContainer = document.getElementById('faq-container');
+
+        faqData.forEach((item, index) => {
+            const faqItem = document.createElement('div');
+            faqItem.className = 'bg-brand-light-gray rounded-lg';
+            faqItem.innerHTML = `
+                <button class="w-full flex justify-between items-center text-left p-5 font-semibold text-brand-dark-blue focus:outline-none">
+                    <span>${item.question}</span>
+                    <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-5 pt-0 text-gray-600">
+                        <p>${item.answer}</p>
+                    </div>
+                </div>
+            `;
+            faqContainer.appendChild(faqItem);
+        });
+
+        faqContainer.addEventListener('click', (e) => {
+            const button = e.target.closest('button');
+            if (!button) return;
+
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('svg');
+
+            // Close all other items
+            faqContainer.querySelectorAll('button').forEach(otherButton => {
+                if (otherButton !== button) {
+                    otherButton.nextElementSibling.style.maxHeight = '0px';
+                    otherButton.querySelector('svg').classList.remove('rotate-180');
+                }
+            });
+
+            // Toggle current item
+            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                content.style.maxHeight = '0px';
+                icon.classList.remove('rotate-180');
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.classList.add('rotate-180');
+            }
+        });
+    </script>
+
+</body>
+</html>
+
